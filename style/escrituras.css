@@ -1,22 +1,20 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f3f4f6;
+    align-self: flex-start;
+    margin-bottom: 1rem;
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 nav {
-    position: absolute;
+    position: sticky;
     top: 0;
     width: 100%;
     background-color: #333;
     padding: 1rem 0;
     text-align: center;
+    z-index: 1000;
 }
 
 nav a {
