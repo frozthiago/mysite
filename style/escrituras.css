@@ -1,18 +1,38 @@
-/* Reset default margins and padding */
-body {
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 /* Navigation bar styles */
 nav {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #2c3e50;
+    background-color: #2c3e50; /* Azul escuro */
     padding: 1rem 0;
     text-align: center;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0; /* Ensure no margins */
+}
+
+/* Links dentro do nav */
+nav a {
+    color: #ffffff; /* Branco para contraste */
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+nav a:hover {
+    color: #f39c12; /* Cor de destaque ao passar o mouse */
+}
+
+.textos{
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #000000; /* Azul claro */
+    margin: 2rem 0; /* Margem superior e inferior */
+    padding: 0 1rem; /* Padding lateral */
 }
