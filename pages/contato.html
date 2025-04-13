@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie sua Mensagem</title>
+    <link rel="stylesheet" href="../style/contato.css"> <!-- Aqui você inclui o seu CSS -->
+</head>
+<body>
+    <nav>
+        <a class="logo" href="/">Froz</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="/">Início</a></li>
+          <li><a href="escrituras.html">Escrituras</a></li>
+        </ul>
+      </nav>
+
+    <main>
+        <section class="contact-form">
+            <h1>Envie sua Mensagem</h1>
+            <p>Gostou do site ou tem alguma dica? Mande sua mensagem para mim!</p>
+
+            <form action="https://formsubmit.co/thifroz@gmail.com" method="POST">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Sua mensagem..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Footer com informações do site -->
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
