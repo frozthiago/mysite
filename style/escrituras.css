@@ -9,6 +9,7 @@ html, body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -34,6 +35,7 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #23232e;
   height: 8vh;
+  z-index: 10;
 }
 
 .nav-list {
@@ -62,7 +64,7 @@ nav {
 
 @media (max-width: 999px) {
   .nav-list {
-    position: absolute;
+    position: fixed; /* Alterado de absolute para fixed */
     top: 8vh;
     right: 0;
     width: 50vw;
@@ -71,8 +73,9 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transform: translateX(100vw);
+    transform: translateX(100%);
     transition: transform 0.3s ease-in;
+    z-index: 9;
   }
 
   .nav-list li {
@@ -125,6 +128,7 @@ main {
   background-color: #0e0e1d;
   color: #fff;
   min-height: 100vh;
+  padding-bottom: 2rem;
 }
 
 .apresent p {
