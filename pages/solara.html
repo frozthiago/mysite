@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carinhos para Solara</title>
+    <link rel="stylesheet" href="../style/solara.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/">Froz</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/">Início</a></li>
+                <li><a href="escrituras.html">Escrituras</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>🌸 Carinhos para Solara 🌸</h1>
+
+        <div class="carinho">
+            <button class="titulo">1</button>
+            <div class="mensagem">
+                <p>Mano, eu sou o fã numero 1 daminha irmã, ela é uma mulher madura, responsa, corre atrás do dela, não deprende de ninguém e sabe o mais importante? Ela me apoia em todos os meus sonhos e metas, me motiva todos os dias que estou desanimado. Afinal, nem todos os dias acordamos bem, né? Ela puxa minha orelha, me da sermão, briga, mas sei que se importa comigo. Dou valor para ela,pq só ela tava comigo na pior fase!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const botoes = document.querySelectorAll('.titulo');
+        botoes.forEach(botao => {
+            botao.addEventListener('click', () => {
+                const msg = botao.nextElementSibling;
+                msg.classList.toggle('ativa');
+            });
+        });
+    </script>
+</body>
+</html>

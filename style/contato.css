@@ -182,3 +182,11 @@
 .contact-form button:hover {
     background: #e67e22;
 }
+input:focus, textarea:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
